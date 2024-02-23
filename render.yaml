@@ -1,23 +1,19 @@
 databases:
   - name: Budget-App-New
-    databaseName: budget_app_database1
-    user: postgres
-    plan: free
+    databaseName: budget_app_database1_2sgf
+    user: budget_app_database1_2sgf_user
 
 services:
   - type: web
     name: Budget-App
     runtime: ruby
-    plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
-    startCommand: "bundle exec rails server"
+    startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: budget_app_database1
+          name: budget_app_database1_2sgf
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-      - key: WEB_CONCURRENCY
-        value: 2 # sensible default
