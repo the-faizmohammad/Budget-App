@@ -1,7 +1,6 @@
 databases:
-  - name: Budget-App
+  - name: budget-app
     databaseName: budget_app_u4nq
-
     user: faiz
     plan: free
 
