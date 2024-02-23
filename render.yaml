@@ -2,11 +2,13 @@ databases:
   - name: Budget-App-New
     databaseName: budget_app_database1_2sgf
     user: budget_app_database1_2sgf_user
+    plan: free
 
 services:
   - type: web
     name: Budget-App
     runtime: ruby
+    plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec puma -C config/puma.rb"
