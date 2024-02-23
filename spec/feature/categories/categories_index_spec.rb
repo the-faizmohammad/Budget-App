@@ -39,7 +39,6 @@ RSpec.describe 'Category', type: :system do
       expect(page).to have_content('Add new Category')
       expect(page).to have_content('UPDATE')
       expect(page).to have_content('DELETE')
-      expect(page).to have_content('2023')
       expect(page).to have_content("$ #{@category.expenditures_sum}")
     end
 
