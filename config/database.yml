@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: budget_app_database1
-  username: 
-  password: 
+  username: postgres
+  password: faiz@1122
