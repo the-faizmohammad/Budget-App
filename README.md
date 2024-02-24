@@ -180,7 +180,7 @@ If you like this project Add a star to the repository!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for providing the required lessons and tutorials for successfully completing the project.
+I would like to thanks  Gregoire Vella on Behance the author of the original design, as required by the Creative Commons license of the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
