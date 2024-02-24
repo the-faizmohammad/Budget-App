@@ -81,7 +81,7 @@
 
  <a name="video-presentation"></a>
 
-- [Project Video presentation](https://youtu.be/azrzXWr0FvY)
+- [Project Video presentation](https://www.youtube.com/watch?v=IZF056-JxlA)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
