@@ -88,4 +88,4 @@ production:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: budgetapp_production
   username: postgres
-  password: faiz@1122
+  password: <%= ENV["budget_app_database1_DATABASE_PASSWORD"] %>

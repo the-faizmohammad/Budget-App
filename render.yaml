@@ -1,23 +1,25 @@
 databases:
-  - name: Budget-App-New
-    databaseName: budgetapp_production
-    user: postgres
+  - name: postgres
+    ipAllowList: []
     plan: free
 
 services:
   - type: web
-    name: Budget-App
-    runtime: ruby
+    name: rails
     plan: free
+    env: ruby
     buildCommand: "./bin/render-build.sh"
-    # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
-    startCommand: "bundle exec rails server"
+    startCommand: bundle exec rails s
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: budgetapp_production
-          property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-      - key: WEB_CONCURRENCY
-        value: 2 # sensible default
+      - key: DATABASE_URL
+        fromDatabase:
+          name: postgres
+          property: connectionString
+
+  - type: redis
+    name: redis
+    ipAllowList: []
+    plan: free
+    maxmemoryPolicy: noeviction
