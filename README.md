@@ -148,7 +148,7 @@ To run tests, run the following command:
 
 👤 **Faiz Mohammad**
 
-- GitHub: [@tan12082001](https://github.com/the-faizmohammad)
+- GitHub: [@the-faizmohammad](https://github.com/the-faizmohammad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/faiz-mohammad-967354142/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
