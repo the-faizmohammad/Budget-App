@@ -272,6 +272,9 @@ img.category-img {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background: var(--second-color);
   padding: 4%;
 }
